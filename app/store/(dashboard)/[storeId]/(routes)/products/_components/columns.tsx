@@ -53,7 +53,7 @@ export const productColumns: ColumnDef<ProductColumn>[] = [
         <div className="flex items-center gap-x-1">
           {
             row.original.images.map(image=>(
-              <Image src={image} height={50} width={50} alt="image" className="rounded-full"/>
+              <Image key={image} src={image} height={50} width={50} alt="image" className="rounded-full"/>
             ))
           }
 
